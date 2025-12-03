@@ -14,7 +14,7 @@ This tool prepares a clean target list for further auditing, such as checking fo
 
 - **Sub-subdomain Flattening**: Strips away deep subdomain levels to isolate the primary subdomain.
 
-  Example: `job.runner.dev.example.com` becomes `dev.example.com`.
+> Example: `job.runner.dev.example.com` becomes `dev.example.com`.
 
 - **Root Domain Filtering**: Ignores the root domain itself (e.g., `example.com`) and excludes hostnames that do not match the target root domain.
 
@@ -60,7 +60,7 @@ python subdomain_filter.py projectdiscovery_assets.csv example.com -o target_lis
 
 1. **Input**: The script reads the provided CSV file. It attempts to "sniff" the CSV format to handle different delimiters automatically.
 
-Column Detection: It looks for a column header matching `host`, `input`, `name`, `url`, or `domain`.
+- Column Detection: It looks for a column header matching `host`, `input`, `name`, `url`, or `domain`.
 
 2. **Processing**: For every row:
 
