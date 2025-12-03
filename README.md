@@ -60,7 +60,7 @@ python subdomain_filter.py projectdiscovery_assets.csv example.com -o target_lis
 
 1. **Input**: The script reads the provided CSV file. It attempts to "sniff" the CSV format to handle different delimiters automatically.
 
-- Column Detection: It looks for a column header matching `host`, `input`, `name`, `url`, or `domain`.
+> Column Detection: It looks for a column header matching `host`, `input`, `name`, `url`, or `domain`.
 
 2. **Processing**: For every row:
 
