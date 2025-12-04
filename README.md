@@ -1,6 +1,6 @@
-# Subdomain Filter (`subdomain_filter.py`)
+# Subdomain Filter
 
-A utility script designed to parse asset discovery CSV files (specifically those from Project Discovery), clean the data, and extract a unique list of direct subdomains (first-level subdomains) for a specific target.
+A utility script (`subdomain_filter.py`) designed to parse asset discovery CSV files (specifically those from Project Discovery), clean the data, and extract a unique list of direct subdomains (first-level subdomains) for a specific target.
 
 This tool prepares a clean target list for further auditing, such as checking for wildcard DNS records using [`wildcard_dns_auditor.py`](https://github.com/MagVeTs/Wildcard_DNS_Auditor).
 
@@ -82,6 +82,9 @@ This script is part of a larger asset discovery workflow:
 2. **Filter** (Using this script): Run `subdomain_filter.py` to normalize the data into a flat list of subdomains.
 3. **Audit**: Use the resulting text file as input for [`wildcard_dns_auditor.py`](https://github.com/MagVeTs/Wildcard_DNS_Auditor) to check for wildcard DNS configurations.
 
+## Contributors
+- [MagVeTs](https://github.com/MagVeTs)
+- [KfirDu](https://github.com/KfirDu)
 
 
 
