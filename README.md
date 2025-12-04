@@ -31,7 +31,7 @@ No external dependencies are required (uses standard libraries: `csv`, `sys`, `o
 Run the script from the command line by providing the input CSV file and the target root domain.
 ```
 Bash
-python subdomain_filter.py <input_csv> <root_domain> [-o output_file]
+python3 subdomain_filter.py <input_csv> <root_domain> [-o output_file]
 ```
 
 ## Arguments
@@ -47,13 +47,13 @@ python subdomain_filter.py <input_csv> <root_domain> [-o output_file]
 **Basic usage** (saves to default `clean_subdomains.txt`):
 ```
 Bash
-python subdomain_filter.py projectdiscovery_assets.csv example.com
+python3 subdomain_filter.py projectdiscovery_assets.csv example.com
 ```
 
 **Specifying a custom output file**:
 ```
 Bash
-python subdomain_filter.py projectdiscovery_assets.csv example.com -o target_list.txt
+python3 subdomain_filter.py projectdiscovery_assets.csv example.com -o target_list.txt
 ```
 
 ## How It Works
